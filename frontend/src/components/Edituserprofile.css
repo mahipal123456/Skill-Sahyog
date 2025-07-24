@@ -1,0 +1,62 @@
+.edit-user-profile {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edit-user-profile__title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.edit-user-profile__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-user-profile__label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.edit-user-profile__input,
+.edit-user-profile__textarea {
+  padding: 0.75rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.edit-user-profile__textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.edit-user-profile__button {
+  padding: 0.75rem;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-user-profile__button:hover {
+  background-color: #357ABD;
+}
+
+.edit-user-profile__error {
+  color: red;
+  margin-top: -0.8rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}

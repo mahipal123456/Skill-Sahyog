@@ -1,0 +1,165 @@
+.ngo-card {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.ngo-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.profile-placeholder {
+  width: 80px;
+  height: 80px;
+  background-color: #007bff; /* blue shade */
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: uppercase;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.ngo-info h2 {
+  margin: 0 0 0.3rem;
+  font-size: 1.6rem;
+}
+
+.mission {
+  font-size: 0.95rem;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 0.3rem;
+}
+
+.role-tag.ngo {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #007bff;
+}
+
+.basic-info {
+  margin: 1.5rem 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 1rem 0;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.label {
+  color: #007bff;
+}
+
+.value {
+  color: #444;
+  max-width: 60%;
+  text-align: right;
+  word-break: break-word;
+}
+
+.value a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.value a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 1rem 0 2rem;
+}
+
+.social-btn {
+  padding: 0.4rem 0.9rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+}
+
+.social-btn.facebook {
+  background: #3b5998;
+}
+.social-btn.linkedin {
+  background: #0077b5;
+}
+.social-btn.instagram {
+  background: #e4405f;
+}
+
+.posted-projects h4 {
+  text-align: center;
+  margin-bottom: 0.75rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #007bff;
+}
+
+.posted-projects ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 650px;
+}
+
+.project {
+  background-color: #f1f8ff;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.4;
+  border-left: 4px solid #007bff;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .ngo-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .info-row {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 0.95rem;
+  }
+
+  .value {
+    max-width: 100%;
+    text-align: left;
+    margin-top: 0.2rem;
+  }
+}

@@ -1,0 +1,212 @@
+.user-card {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.user-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid #4a90e2;
+  object-fit: cover;
+}
+
+.user-info h2 {
+  margin: 0 0 0.3rem;
+  font-size: 1.6rem;
+}
+
+.intro {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.3rem;
+}
+
+.role-tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.role-tag.user {
+  background-color: #28a745;
+}
+
+.level-tag {
+  margin: 1rem 0;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.social-btn {
+  padding: 0.4rem 0.9rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+}
+
+.social-btn.github { background: #333; }
+.social-btn.linkedin { background: #0077b5; }
+.social-btn.resume { background: #1da1f2; }
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+}
+
+.skill-chip {
+  background-color: #e1ecf4;
+  color: #0366d6;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.stats-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 1rem 0;
+}
+
+.stats-box > div {
+  flex: 1 1 25%;
+  min-width: 100px;
+  margin: 0.5rem 0;
+}
+
+.stats-box h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.badges-section {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.badge {
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.completed-projects h4 {
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.completed-projects ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project {
+  background-color: #f8f9fa;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  border-left: 4px solid #28a745;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .user-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .stats-box {
+    flex-direction: column;
+  }
+
+  .stats-box > div {
+    min-width: 100%;
+  }
+}
+
+.profile-placeholder {
+  width: 80px;
+  height: 80px;
+  background-color: #e24a4a; /* You can change the color */
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: uppercase;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.edit-profile-wrapper {
+  display: flex;
+  justify-content: flex-end; /* Or center / left as needed */
+}
+
+.edit-profile-btn {
+  padding: 0.5rem 1rem;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.edit-profile-btn:hover {
+  background-color: #357ABD;
+}
