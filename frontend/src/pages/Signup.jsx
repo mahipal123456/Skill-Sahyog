@@ -21,7 +21,7 @@ function Signup() {
         } = useForm();
     async function formSubmit(data){
         try{
-        const res= await axios.post(`${BASE_URL}/api/signup`,data);
+        const res= await axios.post(`${BASE_URL}/auth/signup`,data);
         
          localStorage.setItem('token',res.data.token)
         const decoded = jwtDecode(res.data.token);
