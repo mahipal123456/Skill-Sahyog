@@ -89,9 +89,14 @@ const ProjectCard = (props) => {
         </form>)}
     <div className="feed-post">
       <div className="post-header">
-        <div className="logo-placeholder">
+        <div
+          className="logo-placeholder clickable"
+          onClick={() => navigate(`/profile/${project.postedBy.username}`)}
+          title={`View profile of @${project.postedBy.username}`}
+        >
           {project.postedBy.username.charAt(0).toUpperCase()}
         </div>
+
         <div className="ngo-info">
           <h4>@{project.postedBy.username}</h4>
           <span className="status-tag">{project.status}</span>

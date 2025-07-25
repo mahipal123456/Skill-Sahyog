@@ -288,7 +288,7 @@ router.post('/applyproject/:projectid', verifytoken, authorizeRoles(['user']), a
 
     // Add project to user's applied projects
     user.userProfile.appliedProjects.push({ project: projectId });
-
+    user.userProfile.stats.applied = (user.userProfile.stats.applied || 0) + 1;
     // Save both documents
     await project.save();
     await user.save();

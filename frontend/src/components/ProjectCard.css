@@ -15,6 +15,15 @@
   gap: 1rem;
   margin-bottom: 0.8rem;
 }
+.logo-placeholder.clickable {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.logo-placeholder.clickable:hover {
+  transform: scale(1.05);
+}
+
 
 .logo-placeholder {
   width: 45px;
